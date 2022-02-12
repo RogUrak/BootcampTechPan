@@ -1,0 +1,37 @@
+<div class="cabecalho">
+  <div class="titulo">{{ titulo }}</div>
+
+  <div *ngIf="escolhaAte > 1" class="subtitulo">
+    <span>Escolha até {{ escolhaAte }}</span>
+    <span
+      *ngIf="
+        opcoesSelecionadas.length > 0 && opcoesSelecionadas.length < escolhaAte
+      "
+      >({{
+        opcoesSelecionadas.length === 1
+          ? "1 selecionada"
+          : opcoesSelecionadas.length + " selecionadas"
+      }}
+      )</span
+    >
+    <span class="alerta" *ngIf="opcoesSelecionadas.length === escolhaAte"
+      >(número máximo de opções atingido)</span
+    >
+  </div>
+</div>
+
+<div class="opcao" *ngFor="let opcao of opcoes">
+  <label
+    ><input
+      [type]="escolhaAte == 1 ? 'radio' : 'checkbox'"
+      [checked]="estaSelecionada(opcao)"
+      (change)="marcaOpcao(opcao)"
+      [disabled]="
+        escolhaAte > 1 &&
+        !estaSelecionada(opcao) &&
+        opcoesSelecionadas.length >= escolhaAte
+      "
+    />
+    {{ opcao }}</label
+  >
+</div>

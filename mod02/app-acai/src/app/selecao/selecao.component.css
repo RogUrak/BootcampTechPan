@@ -1,0 +1,20 @@
+.alerta {
+  color: red;
+  font-weight: bold;
+}
+
+.cabecalho {
+  background-color: lightgrey;
+  padding: 8px;
+}
+
+.cabecalho .titulo {
+  font-weight: bold;
+}
+
+.cabecalho .subtitulo {
+  font-size: smaller;
+}
+.opcao {
+  padding: 8px;
+}
