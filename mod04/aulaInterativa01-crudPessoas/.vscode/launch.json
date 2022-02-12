@@ -1,0 +1,44 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-Teste01Application<teste01>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.urakawa.teste01.Teste01Application",
+      "projectName": "teste01",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Teste01Application<teste01>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.urakawa.vendas.Teste01Application",
+      "projectName": "teste01",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Teste01Application<teste01>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.urakawa.login.Teste01Application",
+      "projectName": "teste01",
+      "args": ""
+    },
+    {
+      "type": "java",
+      "name": "Spring Boot-Teste01Application<teste01>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "mainClass": "com.urakawa.pessoa.Teste01Application",
+      "projectName": "teste01",
+      "args": ""
+    }
+  ]
+}
